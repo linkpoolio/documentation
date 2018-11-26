@@ -1,0 +1,45 @@
+{
+  "docs": {
+    "Example Chainlinks": [
+      "overview",
+      {
+        "type": "subcategory",
+        "label": "Ropsten",
+        "ids": [
+          "asset_price_ropsten",
+          "alpha_vantage_ropsten"
+        ]
+      }
+    ],
+    "Guides": [
+      "node_rpc"
+    ],
+    "Public Ethereum RPC": [
+      {
+        "type": "subcategory",
+        "label": "Ropsten",
+        "ids": [
+          "rpc_ropsten",
+          "websocket_ropsten"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Main (Foundation)",
+        "ids": [
+          "rpc_main",
+          "websocket_main"
+        ]
+      }
+    ],
+    "Infrastructure Design": [
+      "terraform",
+      "parity",
+      "parity_light",
+      "nodes"
+    ],
+    "Contract Design": [
+      "contracts"
+    ]
+  }
+}
