@@ -12,6 +12,7 @@ const siteConfig = {
   baseUrl: '/',
   projectName: 'linkpoolio.github.io',
   organizationName: 'linkpoolio',
+  cname: 'docs.linkpool.io',
 
   headerLinks: [
     {doc: 'overview', label: 'Chainlinks'},
