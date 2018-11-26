@@ -9,7 +9,7 @@ This is performed by aggregating price information from multiple
 exchanges, returning a price calculated from the weighted average of
 volume on each trading pair amongst supported exchanges.
 
-## Source Code
+## Adaptor Source Code
 
 - [GitHub](https://github.com/linkpoolio/asset-price-cl-ea)
 
@@ -20,7 +20,7 @@ Ropsten or you can deploy your own to use from the example repo.
 ### Example
 **Contract Address:** [0xdbb384b9871be341bb360a4768efa7f7872e0ee0](https://ropsten.etherscan.io/address/0xdbb384b9871be341bb360a4768efa7f7872e0ee0)
 
-Steps to use:
+**Steps to use:**
 
 1. Transfer 1 LINK to the address
 2. Choose of the following methods:
@@ -45,6 +45,19 @@ as of when it was last called.
 
 For the BTC/USD example, three exchanges are used for a price aggregate.
 These are Coinbase Pro, HitBTC and Bitfinex.
+
+**Result:**
+```
+➜  example-chainlinks git:(master) npm run exec scripts/get_asset_price.js BTC USD -- --network ropsten
+
+> example-chainlinks@0.0.1 exec /mnt/d/dev/example-chainlinks
+> truffle exec "scripts/get_asset_price.js" "BTC" "USD" "--network" "ropsten"
+
+Using network 'ropsten'.
+
+Pair hash: 0x7404e3d104ea7841c3d9e6fd20adfe99b4ad586bc08d8f3bd3afef894cf184de
+Latest price for BTC-USD: 3967.56
+```
 
 **Note:** There is an [on-going issue](https://www.pivotaltracker.com/n/projects/2129823/stories/162187918)
 which is breaking `requestWeiPrice` resulting in a non-correct wei value
