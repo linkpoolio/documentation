@@ -87,7 +87,7 @@ to be set.
 browser and login with the email/password you set as your API credentials
 in step 6.
 
-### Additional Information
+### Notes
 To remove/stop your node, press `CTRL + C` to stop it, then enter
 `docker rm chainlink` to remove the container.
 
@@ -95,3 +95,10 @@ To run the node in the background, replace `-it` in the command to `-d`.
 Although, you need to then pass the passwords for the Wallet/API via
 parameters. You can do this by adding `-p <file path> -a <file path>` onto
 the command.
+
+### Production Considerations
+The configuration specified above for the easy guide is not recommended
+to be used in production.
+
+For any nodes that will be used in production, please follow the official
+Chainlink guide on [Enabling HTTPS Connections](https://docs.chain.link/docs/enabling-https-connections).
