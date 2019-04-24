@@ -64,7 +64,7 @@ tick the checkbox for `C:` and then click `Apply`.
             -p 6688:6688 ^
             -v c:/Users/<Your Username Here>/.chainlink:/chainlink ^
             --env-file=c:/Users/<Your Username Here>/.chainlink/node.env ^
-            smartcontract/chainlink:latest n
+            smartcontract/chainlink:latest local node
         ```
     - **Linux/MacOSX:**
         ```bash
@@ -73,7 +73,7 @@ tick the checkbox for `C:` and then click `Apply`.
         	-p 6688:6688 \
         	-v ~/.chainlink:/chainlink \
         	--env-file=~/.chainlink/node.env \
-        	smartcontract/chainlink:latest n
+        	smartcontract/chainlink:latest local node
         ```
 6. Upon running step 5, you should see a Chainlink node booting. Enter
 your password for your newly created wallet, and enter your API password
