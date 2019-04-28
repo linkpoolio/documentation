@@ -6,8 +6,8 @@
  */
 
 const siteConfig = {
-  title: '',
-  tagline: 'Documentation, guides and design documents.',
+  title: 'Documentation',
+  tagline: 'Our example Chainlinks and Ethereum as a Service endpoints.',
   url: 'https://docs.linkpool.io',
   baseUrl: '/',
   projectName: 'linkpoolio.github.io',
@@ -17,7 +17,6 @@ const siteConfig = {
   headerLinks: [
     {doc: 'overview', label: 'Chainlinks'},
     {doc: 'rpc_ropsten', label: 'Ethereum RPC'},
-    {doc: 'terraform', label: 'Design'},
     {page: 'contact', label: 'Contact us'},
   ],
 
@@ -34,6 +33,15 @@ const siteConfig = {
 
   highlight: {
     theme: 'default',
+  },
+
+  fonts: {
+    cabin: [
+      'Cabin'
+    ],
+    lato: [
+      'Lato'
+    ]
   },
 
   scripts: ['https://buttons.github.io/buttons.js'],

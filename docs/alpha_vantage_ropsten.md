@@ -5,51 +5,34 @@ sidebar_label: Alpha Vantage
 ---
 
 The Alpha Vantage Chainlink fetches data feeds from [Alpha Vantage's](https://www.alphavantage.co/)
-API. This adaptor supports every endpoint available by accepting a parameter
-defining which function to call.
+API.
 
-## Adaptor Source Code
+## API Documenation
+https://www.alphavantage.co/documentation/
 
-- [GitHub](https://github.com/linkpoolio/alpha-vantage-cl-ea)
+## Example Contract Source Code
+[GitHub](https://github.com/linkpoolio/example-chainlinks/blob/master/contracts/AlphaVantageConsumer.sol)
 
-## Usage
-To use this contract, you can either use the one that we've deployed to
-Ropsten or you can deploy your own to use from the example repo.
+## Chainlink Details
+**Oracle Address:** 0x83F00b902cbf06E316C95F51cbEeD9D2572a349a
 
-### Example
-**Contract Address:** [0x40b36e050da8674af88ac80597a824722f2dae6e](https://ropsten.etherscan.io/address/0x40b36e050da8674af88ac80597a824722f2dae6e)
+**Job ID:** 4f5bd067b34a45b0adae559105f3e6fc
 
-**Steps to use:**
+## Running the Adaptor
+This adaptor is built in [bridges](https://github.com/jleeh/bridges):
 
-1. Transfer 1 LINK to the address
-2. Enter your desired `_from` and `_to` currencies in `requestExchangeRate`.
-4. Upon firing the transaction, you can monitor the address of
-[0xbe4cda56b65af5ab59276ca02e103584aba84603](https://ropsten.etherscan.io/address/0xbe4cda56b65af5ab59276ca02e103584aba84603).
-This is the oracle. In a short amount of time within tx
-confirmation, there should be a transaction appearing under that address.
-That is the oracle writing back on-chain to the contract with the exchange rate.
-5. To be able to manually verify the price, you can call `prices` with the
-`keccack256` hash of the trading pair. For example, `web3.sha3('USDGBP')`
-will return `0x93ff94ff22b2966f9d445413d45f3f1c91389c695ae5a45f22fbe729e042d52c`
-and upon being entered in `prices` will return the latest rate for USD/GBP
-as of when it was last called.
-
-**Result:**
-
+[Bridge URL](https://s3.linkpool.io/bridges/alphavantage.json), example usage:
 ```
-➜  example-chainlinks git:(master) ✗ npm run exec scripts/get_exchange_rate.js -- USD GBP --network ropsten
-
-> example-chainlinks@0.0.1 exec /mnt/d/dev/example-chainlinks
-> truffle exec "scripts/get_exchange_rate.js" "USD" "GBP" "--network" "ropsten"
-
-Using network 'ropsten'.
-
-Pair hash: 0x93ff94ff22b2966f9d445413d45f3f1c91389c695ae5a45f22fbe729e042d52c
-Latest price for USD-GBP: 0.78
+bridges -b https://s3.linkpool.io/bridges/alphavantage.json
 ```
 
-### Deploy your own
-We have a repository on GitHub that includes the `AlphaVantageConsumer`
-source code for your own deployment.
+## Example (Forex Rates)
+Contract address: https://ropsten.etherscan.io/address/0x6f5f0C4256a6f06741a4Fd13F30a7592a62fD979
 
-**Source Code:** [GitHub (example-chainlinks)](https://github.com/linkpoolio/example-chainlinks)
+Clone https://github.com/linkpoolio/example-chainlinks and run the following:
+```
+npm run exec scripts/alphavantage/request.js -- GBP USD --network ropsten
+npm run exec scripts/alphavantage/get.js -- GBP USD --network ropsten
+```
+
+This will request a forex rate from AlphaVantage, then get the returning result returning via our LinkPool node.

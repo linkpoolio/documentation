@@ -40,9 +40,6 @@ class Footer extends React.Component {
             <a href={this.docUrl('rpc_ropsten.html', this.props.language)}>
               Public Ethereum RPCs
             </a>
-            <a href={this.docUrl('terraform.html', this.props.language)}>
-              Infrastructure Design
-            </a>
           </div>
           <div>
             <h5>Community</h5>
