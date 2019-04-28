@@ -6,7 +6,7 @@
  */
 
 const siteConfig = {
-  title: 'LinkPool Docs',
+  title: '',
   tagline: 'Documentation, guides and design documents.',
   url: 'https://docs.linkpool.io',
   baseUrl: '/',
@@ -26,8 +26,8 @@ const siteConfig = {
   favicon: 'img/favicon/favicon.ico',
 
   colors: {
-    primaryColor: '#395069',
-    secondaryColor: '#6D96C2',
+    primaryColor: '#333AC4',
+    secondaryColor: '#0D71D3',
   },
 
   copyright: `Copyright © ${new Date().getFullYear()} LinkPool`,
