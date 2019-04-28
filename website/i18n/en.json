@@ -3,23 +3,26 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Documentation, guides and design documents.",
+    "tagline": "Our example Chainlinks and Ethereum as a Service endpoints.",
     "docs": {
       "alpha_vantage_ropsten": {
         "title": "Alpha Vantage (Ropsten)",
         "sidebar_label": "Alpha Vantage"
       },
+      "api_aggregator_ropsten": {
+        "title": "API Aggregator (Ropsten)",
+        "sidebar_label": "API Aggregator"
+      },
       "asset_price_ropsten": {
         "title": "Asset Price (Ropsten)",
         "sidebar_label": "Asset Price"
       },
+      "bridges": {
+        "title": "bridges"
+      },
       "overview": {
         "title": "Overview",
         "sidebar_label": "Overview"
-      },
-      "contracts": {
-        "title": "Contract Source",
-        "sidebar_label": "Contract Source"
       },
       "node_rpc": {
         "title": "Chainlink Node Setup Guide (LP EaaS)",
@@ -29,13 +32,9 @@
         "title": "Chainlink Node Design",
         "sidebar_label": "Chainlink Nodes"
       },
-      "parity_light": {
-        "title": "Parity Light Design (Public RPCs)",
-        "sidebar_label": "Parity Light (Public RPCs)"
-      },
-      "parity": {
-        "title": "Parity Design",
-        "sidebar_label": "Parity"
+      "rapid_api_weather_ropsten": {
+        "title": "Rapid API (Weather) (Ropsten)",
+        "sidebar_label": "Rapid API (Weather)"
       },
       "rpc_main": {
         "title": "Main (Foundation) RPC",
@@ -45,10 +44,6 @@
         "title": "Ropsten RPC",
         "sidebar_label": "RPC"
       },
-      "terraform": {
-        "title": "Use of Terraform",
-        "sidebar_label": "Use of Terraform"
-      },
       "websocket_main": {
         "title": "Main (Foundation) WebSocket",
         "sidebar_label": "WebSocket"
@@ -56,20 +51,21 @@
       "websocket_ropsten": {
         "title": "Ropsten WebSocket",
         "sidebar_label": "WebSocket"
+      },
+      "wolframalpha_ropsten": {
+        "title": "WolframAlpha Short Answers (Distance Between) (Ropsten)",
+        "sidebar_label": "WolframAlpha Short Answers (Distance Between)"
       }
     },
     "links": {
       "Chainlinks": "Chainlinks",
       "Ethereum RPC": "Ethereum RPC",
-      "Design": "Design",
       "Contact us": "Contact us"
     },
     "categories": {
       "Example Chainlinks": "Example Chainlinks",
       "Guides": "Guides",
-      "Public Ethereum RPC": "Public Ethereum RPC",
-      "Infrastructure Design": "Infrastructure Design",
-      "Contract Design": "Contract Design"
+      "Public Ethereum RPC": "Public Ethereum RPC"
     }
   },
   "pages-strings": {
