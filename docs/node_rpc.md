@@ -46,11 +46,11 @@ This subsystem will provide a native Linux terminal in Windows 10.
     ```bash
     ETH_URL=wss://ropsten-rpc.linkpool.io/ws
     ROOT=/chainlink
-    CHAINLINK_DEV=true
     LINK_CONTRACT_ADDRESS=0x20fe562d797a42dcb3399062ae9546cd06f6328
     ETH_CHAIN_ID=3
     LOG_LEVEL=debug
     CHAINLINK_TLS_PORT=0
+    CHAINLINK_TLS_HOST=localhost
     ```
 4. **(Windows Only)** Add `C:` to your shared drives. Right click on Docker
 in the taskbar, click `Settings`. Then browse to `Shared Drives` and
