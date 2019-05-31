@@ -1,6 +1,6 @@
 ---
 id: asset_price_main
-title: Asset Price (Ropsten)
+title: Asset Price (Main)
 sidebar_label: Asset Price
 ---
 
