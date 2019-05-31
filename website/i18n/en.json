@@ -9,9 +9,17 @@
         "title": "Alpha Vantage (Ropsten)",
         "sidebar_label": "Alpha Vantage"
       },
+      "api_aggregator_main": {
+        "title": "API Aggregator (Mainnet)",
+        "sidebar_label": "API Aggregator"
+      },
       "api_aggregator_ropsten": {
         "title": "API Aggregator (Ropsten)",
         "sidebar_label": "API Aggregator"
+      },
+      "asset_price_main": {
+        "title": "Asset Price (Ropsten)",
+        "sidebar_label": "Asset Price"
       },
       "asset_price_ropsten": {
         "title": "Asset Price (Ropsten)",
@@ -23,6 +31,14 @@
       "overview": {
         "title": "Overview",
         "sidebar_label": "Overview"
+      },
+      "generic_jobs_main": {
+        "title": "Generic Jobs (Main)",
+        "sidebar_label": "Generic Jobs"
+      },
+      "generic_jobs_ropsten": {
+        "title": "Generic Jobs (Ropsten)",
+        "sidebar_label": "Generic Jobs"
       },
       "node_rpc": {
         "title": "Chainlink Node Setup Guide (LP EaaS)",

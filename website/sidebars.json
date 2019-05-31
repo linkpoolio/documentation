@@ -4,8 +4,18 @@
       "overview",
       {
         "type": "subcategory",
+        "label": "Mainnet",
+        "ids": [
+          "generic_jobs_main",
+          "asset_price_main",
+          "api_aggregator_main"
+        ]
+      },
+      {
+        "type": "subcategory",
         "label": "Ropsten",
         "ids": [
+          "generic_jobs_ropsten",
           "asset_price_ropsten",
           "alpha_vantage_ropsten",
           "api_aggregator_ropsten",
