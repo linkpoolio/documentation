@@ -1,6 +1,6 @@
 ---
 id: api_aggregator_main
-title: API Aggregator (Mainnet)
+title: API Aggregator (Main)
 sidebar_label: API Aggregator
 ---
 
