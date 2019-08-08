@@ -28,6 +28,10 @@
         "title": "Generic Jobs (Ropsten)",
         "sidebar_label": "Generic Jobs"
       },
+      "mainnet_node": {
+        "title": "Mainnet Node",
+        "sidebar_label": "Node"
+      },
       "market_adapter_listing": {
         "title": "Adapter Configuration",
         "sidebar_label": "Adapter Configuration"
@@ -75,6 +79,7 @@
       "Contact us": "Contact us"
     },
     "categories": {
+      "Market": "Market",
       "Chainlinks": "Chainlinks",
       "Guides": "Guides",
       "Public Ethereum RPC": "Public Ethereum RPC"

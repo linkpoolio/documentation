@@ -1,13 +1,16 @@
 {
   "docs": {
+    "Market": [
+      "market_node_verification",
+      "market_adapter_listing"
+    ],
     "Chainlinks": [
       "overview",
       {
         "type": "subcategory",
-        "label": "Chainlink Market",
+        "label": "Mainnet",
         "ids": [
-          "market_node_verification",
-          "market_adapter_listing"
+          "mainnet_node"
         ]
       },
       {
