@@ -4,11 +4,10 @@
       "overview",
       {
         "type": "subcategory",
-        "label": "Mainnet",
+        "label": "Chainlink Market",
         "ids": [
-          "generic_jobs_main",
-          "asset_price_main",
-          "api_aggregator_main"
+          "market_node_verification",
+          "market_adapter_listing"
         ]
       },
       {
