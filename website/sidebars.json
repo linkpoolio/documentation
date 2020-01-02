@@ -2,7 +2,8 @@
   "docs": {
     "Market": [
       "market_node_verification",
-      "market_adapter_listing"
+      "market_adapter_listing",
+      "keybase_verification"
     ],
     "Chainlinks": [
       "overview",
