@@ -40,12 +40,12 @@ When creating API keys within the Market, it is important to note:
 ## Authenticating with API Keys
 
 To authenticate using the key pair, set headers `x-access-key-id` and `x-secret-key`:
-    ```
-    curl --fail -X GET https://market.link/v1/keys/ \
-    -H "x-access-key-id: ${access_key_id}"
-    -H "x-secret-key: ${secret_key}"
-    -H 'Content-Type: application/json'
-    ```
+```
+curl --fail -X GET https://market.link/v1/keys/ \
+-H "x-access-key-id: ${access_key_id}"
+-H "x-secret-key: ${secret_key}"
+-H 'Content-Type: application/json'
+```
 
 ## Deleting an API Key
 
