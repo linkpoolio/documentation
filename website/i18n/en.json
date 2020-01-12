@@ -28,6 +28,10 @@
         "title": "Generic Jobs (Ropsten)",
         "sidebar_label": "Generic Jobs"
       },
+      "keybase_verification": {
+        "title": "Keybase Verification",
+        "sidebar_label": "Keybase Verification"
+      },
       "mainnet_node": {
         "title": "Mainnet Node",
         "sidebar_label": "Node"
@@ -35,6 +39,10 @@
       "market_adapter_listing": {
         "title": "Adapter Configuration",
         "sidebar_label": "Adapter Configuration"
+      },
+      "market_api_keys": {
+        "title": "Managing API Keys",
+        "sidebar_label": "Managing API Keys"
       },
       "market_node_verification": {
         "title": "Node Verification",
