@@ -12,7 +12,7 @@ When creating API keys within the Market, it is important to note:
 ## Creating an API Key
 
 - Login with your email and password, storing the returned cookie:
-    ```
+    ```shell script
     curl --fail -c market.cookie -X POST https://market.link/v1/user/login \
     -H 'Content-Type: application/json' \
     -d \
@@ -22,7 +22,7 @@ When creating API keys within the Market, it is important to note:
     }'
     ```
 - If you have 2FA enabled, send your 2FA token to the api:
-    ```
+    ```shell script
     curl --fail -b market.cookie -X POST https://market.link/v1/user/login/twofactor \
     -H 'Content-Type: application/json' \
     -d \
@@ -31,7 +31,7 @@ When creating API keys within the Market, it is important to note:
     }'
     ```
 - Create a new key pair, storing the returned keys somewhere safe:
-    ```
+    ```shell script
     curl --fail -b market.cookie -X POST https://market.link/v1/keys/ \
     -H 'Content-Type: application/json'
     ```
@@ -40,7 +40,7 @@ When creating API keys within the Market, it is important to note:
 ## Authenticating with API Keys
 
 To authenticate using the key pair, set headers `x-access-key-id` and `x-secret-key`:
-```
+```shell script
 curl --fail -X GET https://market.link/v1/keys/ \
 -H "x-access-key-id: ${access_key_id}"
 -H "x-secret-key: ${secret_key}"
@@ -49,7 +49,7 @@ curl --fail -X GET https://market.link/v1/keys/ \
 
 ## Deleting an API Key
 
-```
+```shell script
 curl --fail -b market.cookie -X DELETE https://market.link/v1/keys/:accessKeyId \
 -H 'Content-Type: application/json
 ```
