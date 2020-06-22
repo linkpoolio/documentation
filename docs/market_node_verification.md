@@ -17,12 +17,8 @@ implementor. Creates a Chainlink request to a specified oracle, that then emits 
 by the Chainlink node. 
 
 ## Fees
-To view our fees for verification within the Market, view:
-https://market.link/fees
-
-- 1 LINK is sent back to the `Oracle` contract being verified. This can be withdrawn by the Chainlink node operator.
-- 15 LINK is sent to our [PoolOwners](https://etherscan.io/address/0x182d4990bb0ff595b308b3efcb93313abad575e7) contract. 
-This contract is how LinkPool and our token holders are distributed the earned LINK from our revenue streams.
+All fees for the Market are paid in LINK, and denominated in USD. LinkPool uses Chainlink's [LINK/USD price reference data](https://feeds.chain.link/link-usd) to determine the fee in LINK.
+Fee conversions are detailed on the [Fees page](https://market.link/fees) in the Market.
 
 ## Steps to Verify
 We've spent a lot of time & effort trying to make the verification process as simple as possible for people to run 
