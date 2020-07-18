@@ -58,6 +58,7 @@ Firstly, you need to deposit some LINK into the Market.
 ## Common Problems
 
 - Make sure your Chainlink node has an ETH balance.
+- The `env` for your node should have the configuration variable `MINIMUM_CONTRACT_PAYMENT` value set. The default is `1000000000000000000` which is 1 LINK. This value should be set to `100000000000000000` or lower for the verification to complete.
 - When you deploy your `Oracle` contract, ensure the `_link` token address is correct
 (0x514910771af9ca656af840dff83e8264ecf986ca).
 - Make sure your Chainlink node has fulfillment permission within the `Oracle` contract. This can be done by calling 
