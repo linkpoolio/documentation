@@ -1,6 +1,15 @@
 {
   "docs": {
     "Market": [
+      {
+        "type": "subcategory",
+        "label": "Metrics API",
+        "ids": [
+          "market_metrics_api_overview",
+          "market_metrics_api_example_queries",
+          "market_metrics_api_connect_grafana"
+        ]
+      },
       "market_node_verification",
       "market_adapter_listing",
       "keybase_verification",
