@@ -44,6 +44,18 @@
         "title": "Managing API Keys",
         "sidebar_label": "Managing API Keys"
       },
+      "market_metrics_api_connect_grafana": {
+        "title": "Connect Grafana to Market Metrics API",
+        "sidebar_label": "Connect your Grafana"
+      },
+      "market_metrics_api_example_queries": {
+        "title": "Metrics API Example Queries",
+        "sidebar_label": "Example Queries"
+      },
+      "market_metrics_api_overview": {
+        "title": "Metrics API Overview",
+        "sidebar_label": "Overview"
+      },
       "market_node_verification": {
         "title": "Node Verification",
         "sidebar_label": "Node Verification"
