@@ -12,7 +12,7 @@ Verification is executed via two contracts:
 - [MarketDeposits](https://etherscan.io/address/0x1c877ba1d3b384410b61f1663ca1b8130f4ad59c): This contract 
 is a central depositing contract to the Market. It allows you to deposit LINK into the market for it to be spent within 
 the verification process when approved by the user.
-- [OracleVerifier](https://etherscan.io/address/0x6c00887f34c017aa1febb9e5Da8EF9d0Cb264C2F): `ChainlinkClient` 
+- [OracleVerifier](https://etherscan.io/address/0xf9fc2b4a0E487297B05285e9B3327f26e70c4E9b): `ChainlinkClient` 
 implementor. Creates a Chainlink request to a specified oracle, that then emits a log with the response token as fetched 
 by the Chainlink node. 
 
@@ -28,7 +28,7 @@ through themselves, although we understand there still could be issues.
 Firstly, you need to deposit some LINK into the Market. 
 
 1. Login to your profile
-2. Click "ETH Wallet" on the sidebar
+2. Click "Wallet" on the sidebar
 3. Ensure Metamask is installed
 3. Click Connect
 4. Make sure you have enough LINK to deposit in your wallet
