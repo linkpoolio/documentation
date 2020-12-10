@@ -1,5 +1,5 @@
 ---
-id: market_adapter_overview
+id: market_adapter_listing_overview
 title: Adding Adapters Overview
 sidebar_label: Overview
 ---
