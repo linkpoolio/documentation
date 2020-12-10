@@ -20,10 +20,6 @@ by the Chainlink node.
 To view our fees for verification within the Market, view:
 https://market.link/fees
 
-- 1 LINK is sent back to the `Oracle` contract being verified. This can be withdrawn by the Chainlink node operator.
-- 15 LINK is sent to our [PoolOwners](https://etherscan.io/address/0x182d4990bb0ff595b308b3efcb93313abad575e7) contract. 
-This contract is how LinkPool and our token holders are distributed the earned LINK from our revenue streams.
-
 ## Steps to Verify
 We've spent a lot of time & effort trying to make the verification process as simple as possible for people to run 
 through themselves, although we understand there still could be issues.
@@ -59,7 +55,19 @@ Firstly, you need to deposit some LINK into the Market.
 
 - Make sure your Chainlink node has an ETH balance.
 - The `env` for your node should have the configuration variable `MINIMUM_CONTRACT_PAYMENT` value set. The default is `1000000000000000000` which is 1 LINK. This value should be set to `100000000000000000` or lower for the verification to complete.
-- When you deploy your `Oracle` contract, ensure the `_link` token address is correct
-(0x514910771af9ca656af840dff83e8264ecf986ca).
-- Make sure your Chainlink node has fulfillment permission within the `Oracle` contract. This can be done by calling 
-function `setFulfillmentPermission({node_wallet}, true)`.
+- Make sure your Chainlink node has fulfillment permission within the `Oracle` contract. This can be done by calling function `setFulfillmentPermission({node_wallet}, true)`.
+- Confirm the address you provided for your node in the Market is the node's `ORACLE_CONTRACT_ADDRESS`, and not the `ACCOUNT_ADDRESS`.
+- When you deploy your `Oracle` contract, ensure the `_link` token address is correct:
+
+| Network                     | LINK Token Address                         |
+|-----------------------------|--------------------------------------------|
+| Ethereum Mainnet            | 0x514910771af9ca656af840dff83e8264ecf986ca |
+| Ethereum Ropsten            | 0x20fe562d797a42dcb3399062ae9546cd06f63280 |
+| Ethereum Kovan              | 0xa36085F69e2889c224210F603D836748e7dC0088 |
+| Ethereum Rinkeby            | 0x01BE23585060835E02B77ef475b0Cc51aA1e0709 |
+| Ethereum Goerli             | 0x326c977e6efc84e512bb9c30f76e30c160ed06fb |
+| Binance Smart Chain Mainnet | 0x404460c6a5ede2d891e8297795264fde62adbb75 |
+| Binance Smart Chain Testnet | 0x84b9B910527Ad5C03A9Ca831909E21e236EA7b06 |
+| Matic Mainnet               | 0xb0897686c545045afc77cf20ec7a532e3120e0f1 |
+| Matic Mumbai                | 0x326C977E6efc84E512bB9C30f76E30c160eD06FB |
+

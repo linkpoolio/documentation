@@ -1,7 +1,7 @@
 ---
-id: market_adapter_listing
-title: Adapter Configuration
-sidebar_label: Adapter Configuration
+id: market_adapter_listing_owner
+title: Adding Your Own Adapter 
+sidebar_label: Your Own Adapter
 ---
 
 For an adapter to be supported on the Market, it needs a configuration file that describes and species the adapter to 
@@ -35,10 +35,10 @@ parameters:
 
 | Key               | Type     | Regex Validation                           | Description                                                                                                                                                                                                                                                         |
 |-------------------|----------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name              | string   | `^[a-zA-Z0-9_\-\.\ \+\>\=]{2,30}$`         | The publicly visible name/title of the adapter when listed on the Market. This will show as the title in all pages & search results.                                                                                                                                |
-| node_identifier   | string   | `^[a-zA-Z0-9_\-\.\ \+\>\=]{2,30}$`         | The ID of the adapter on Chainlink nodes. This is what is used within `tasks` in a Chainlink Job Specification.                                                                                                                                                     |
-| description       | string   | `^[a-zA-Z0-9_\-\.\ \,\!\?\+\>\=]{10,255}$` | The publicly visible description of the adapter that is shown within search results and when viewing.                                                                                                                                                               |
+| name              | string   | `^[a-zA-Z0-9_\-\.\ \+\>\=]{2,50}$`         | The publicly visible name/title of the adapter when listed on the Market. This will show as the title in all pages & search results.                                                                                                                                |
+| node_identifier   | string   | `^[a-zA-Z0-9_\-\.\ \+\>\=]{2,50}$`         | The ID of the adapter on Chainlink nodes. This is what is used within `tasks` in a Chainlink Job Specification.                                                                                                                                                     |
+| description       | string   | `^[a-zA-Z0-9_\-\.\ \,\!\?\+\>\=]{10,480}$` | The publicly visible description of the adapter that is shown within search results and when viewing.                                                                                                                                                               |
 | platforms         | []string | `^[a-zA-Z0-9_\-\.\ \+\>\=]{2,30}$`         | The list of platforms that your adapter supports. Currently only: `Docker`, `AWS Lambda`, `GCP Functions`.                                                                                                                                                             |
 | data_sources.name | string   | `^[a-zA-Z0-9_\-\.\ \+\>\=]{2,30}$`         | The name of that datasource. This is used to match any pre-existing data sources. For example, if you name your data source `Binance`, then the market will use the already preexisting data source called `Binance`.                                               |
-| data_sources.url  | string   | Valid URL                                  | The URL of the datasource. We recommend this be the homepage of the service in question, or the landing page for the API documenation.                                                                                                                              |
+| data_sources.url  | string   | Valid URL                                  | The URL of the datasource. We recommend this be the homepage of the service in question, or the landing page for the API documentation.                                                                                                                              |
 | parameters        | []string | `^[a-zA-Z0-9_\-]{1,30}$`                   | The list of parameters for your adapter. These parameters will be shown to the node operators/users when using your adapter. For example, when creating a job if you select an added adapter, it will show the list of parameter keys as designated by this field.  |
