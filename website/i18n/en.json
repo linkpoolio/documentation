@@ -36,9 +36,17 @@
         "title": "Mainnet Node",
         "sidebar_label": "Node"
       },
-      "market_adapter_listing": {
-        "title": "Adapter Configuration",
-        "sidebar_label": "Adapter Configuration"
+      "market_adapter_listing_open_adapter": {
+        "title": "Adding an Open Adapter",
+        "sidebar_label": "An Open Adapter"
+      },
+      "market_adapter_listing_overview": {
+        "title": "Adding Adapters Overview",
+        "sidebar_label": "Overview"
+      },
+      "market_adapter_listing_owner": {
+        "title": "Adding Your Own Adapter",
+        "sidebar_label": "Your Own Adapter"
       },
       "market_api_keys": {
         "title": "Managing API Keys",
@@ -68,25 +76,13 @@
         "title": "Chainlink Node Design",
         "sidebar_label": "Chainlink Nodes"
       },
+      "public_rpc": {
+        "title": "Public Ethereum RPCs",
+        "sidebar_label": "Public ETH RPCs"
+      },
       "rapid_api_weather_ropsten": {
         "title": "Rapid API (Weather) (Ropsten)",
         "sidebar_label": "Rapid API (Weather)"
-      },
-      "rpc_main": {
-        "title": "Main (Foundation) RPC",
-        "sidebar_label": "RPC"
-      },
-      "rpc_ropsten": {
-        "title": "Ropsten RPC",
-        "sidebar_label": "RPC"
-      },
-      "websocket_main": {
-        "title": "Main (Foundation) WebSocket",
-        "sidebar_label": "WebSocket"
-      },
-      "websocket_ropsten": {
-        "title": "Ropsten WebSocket",
-        "sidebar_label": "WebSocket"
       },
       "wolframalpha_ropsten": {
         "title": "WolframAlpha Short Answers (Distance Between) (Ropsten)",

@@ -49,22 +49,7 @@
       "node_rpc"
     ],
     "Public Ethereum RPC": [
-      {
-        "type": "subcategory",
-        "label": "Ropsten",
-        "ids": [
-          "rpc_ropsten",
-          "websocket_ropsten"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Main (Foundation)",
-        "ids": [
-          "rpc_main",
-          "websocket_main"
-        ]
-      }
+      "public_rpc"
     ]
   }
 }
