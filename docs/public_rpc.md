@@ -1,17 +1,31 @@
 ---
-id: rpc_main
-title: Main (Foundation) RPC
-sidebar_label: RPC
+id: public_rpc
+title: Public Ethereum RPCs
+sidebar_label: Public ETH RPCs
 ---
 
-We offer a public Ethereum RPC for main (Foundation) that provides
-access to the JSON RPC.
+We offer a public Ethereum endpoints for mainnet and test networks.
 
 ## Endpoint
 
-**JSON RPC:** `https://main-rpc.linkpool.io/`
+#### Mainnet
+
+- **JSON RPC:** `https://main-light.eth.linkpool.io/`
+- **Websocket:** `wss://main-light.eth.linkpool.io/ws`
+
+#### Rinkeby
+
+- **JSON RPC:** `https://rinkeby-light.eth.linkpool.io/`
+- **Websocket:** `wss://rinkeby-light.eth.linkpool.io/ws`
+
+#### Goerli
+
+- **JSON RPC:** `https://goerli-light.eth.linkpool.io/`
+- **Websocket:** `wss://goerli-light.eth.linkpool.io/ws`
 
 ### Example Usage
+
+#### HTTP:
 
 ```bash
 curl https://main-rpc.linkpool.io/ \
@@ -22,6 +36,12 @@ curl https://main-rpc.linkpool.io/ \
 Result:
 ```json
 {"jsonrpc":"2.0","result":"0x6708b4","id":1}
+```
+
+#### Websocket:
+
+```bash
+wscat -c wss://main-light.eth.linkpool.io/ws
 ```
 
 ## Limitations

@@ -16,7 +16,7 @@ const siteConfig = {
 
   headerLinks: [
     {doc: 'overview', label: 'Chainlinks'},
-    {doc: 'rpc_ropsten', label: 'Ethereum RPC'},
+    {doc: 'public_rpc', label: 'Ethereum RPC'},
     {href: 'mailto:contact@linkpool.io', label: 'Contact us'},
   ],
 
