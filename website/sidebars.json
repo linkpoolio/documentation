@@ -10,7 +10,16 @@
           "market_metrics_api_connect_grafana"
         ]
       },
-      "market_node_verification",
+      {
+        "type": "subcategory",
+        "label": "Node Verification",
+        "ids": [
+          "market_node_verification_overview",
+          "market_node_verification_eth",
+          "market_node_verification_bsc",          
+          "market_node_verification_matic"
+        ]
+      },
       {
         "type": "subcategory",
         "label": "Adding Adapters",

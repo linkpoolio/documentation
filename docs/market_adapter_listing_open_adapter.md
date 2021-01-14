@@ -18,17 +18,19 @@ We've created a simple form, so it's easy for a registered user to list an open 
 | Node Identifier   | string   | `^[a-zA-Z0-9_\-\.\ \+\>\=]{2,50}$`         | The ID of the adapter on Chainlink nodes. This is what is used within `tasks` in a Chainlink Job Specification.                                                                                                                                                     |
 | Platforms         | []string | `^[a-zA-Z0-9_\-\.\ \+\>\=]{2,30}$`         | The list of platforms that your adapter supports. Currently only: `Docker`, `AWS Lambda`, `GCP Functions`.                                                                                                                                                          |
 | Data Sources Name | string   | `^[a-zA-Z0-9_\-\.\ \+\>\=]{2,30}$`         | The name of that datasource. This is used to match any pre-existing data sources. For example, if you name your data source `Binance`, then the market will use the already preexisting data source called `Binance`.                                               |
-| Data Sources URL  | string   | Valid URL                                  | The URL of the datasource. We recommend this be the homepage of the service in question, or the landing page for the API documentation. Multiple datasources can be added.                                                                                          |                                                                                       |
+| Data Sources URL  | string   | Valid URL                                  | The URL of the datasource. We recommend this be the homepage of the service in question, or the landing page for the API documentation. Multiple datasources can be added.                                                                                          |
 
 
 ## Example
-As an example, the [CoinAPI](https://market.link/search/adapters?page=1&search=coinapi) adapter was added from Chainlink's monorepo with the following details:
+As an example, the [CoinAPI](https://market.link/adapters/5a5447b5-681a-476e-9c2a-6ceebac84982) adapter was added from [Chainlink's monorepo](https://github.com/smartcontractkit/external-adapters-js/tree/develop/coinapi) with the following details:
 
 ```example
-Adapter URL: https://github.com/smartcontractkit/external-adapters-js/tree/master/coinapi
+Repository Owner: smartcontractkit
+Repository Name: external-adapters-js
+Subfolder: /coinapi
 Name: CoinAPI
-Description: External adapter for CoinAPI to access cryptocurrency price data
-Node Identifier: coinapi
+Description: External Adapter for CoinAPI from the Chainlink monorepo
+Node Identifier: cl-coinapi
 platforms:
   - Docker
   - AWS Lambda
