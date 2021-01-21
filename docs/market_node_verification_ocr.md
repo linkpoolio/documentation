@@ -1,7 +1,7 @@
 ---
 id: market_node_verification_ocr
-title: Node Verification Ethereum
-sidebar_label: Ethereum
+title: Node Verification OCR
+sidebar_label: Off Chain Reporting
 ---
 
 Operators who have both a runlog and an OCR node on the same network are only required to verify a single node for that network in the Market. 
