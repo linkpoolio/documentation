@@ -8,6 +8,7 @@ When creating API keys within the Market, it is important to note:
 - No IAM support, all keys have full permission.
 - Two key pairs can be active at any one time.
 - Management of API keys can be performed within the API, or through a GUI found [here](https://docs.linkpool.io/docs/market_api_keys).
+- Note these keys are for interacting with the Market, and not for authenticating with the Chainlink Explorer.
 
 ## Creating an API Key with CLI
 
