@@ -7,9 +7,9 @@ sidebar_label: Managing API Keys
 When creating API keys within the Market, it is important to note:
 - No IAM support, all keys have full permission.
 - Two key pairs can be active at any one time.
-- Management of API keys is performed only within the API, a GUI within the profile will be built in the near future.
+- Management of API keys can be performed within the API, or through a GUI found [here](https://docs.linkpool.io/docs/market_api_keys).
 
-## Creating an API Key
+## Creating an API Key with CLI
 
 - Login with your email and password, storing the returned cookie:
     ```shell script
