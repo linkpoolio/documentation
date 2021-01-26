@@ -64,7 +64,7 @@ There are multiple LINK tokens on Matic, and the correct token address is listed
 ## Common Problems
 
 - Make sure your Chainlink node has a MATIC balance.
-- The `env` for your node should have the configuration variable `MINIMUM_CONTRACT_PAYMENT` value set. The default is `1000000000000000000` which is 1 LINK. This value should be set to `100000000000000000` or lower for the verification to complete.
+- The `env` for your node should have the configuration variable `MINIMUM_CONTRACT_PAYMENT` value set. The default is `1000000000000000000` which is 1 LINK. This value should be set to `10000000000000000` or lower for the verification to complete.
 - Make sure your Chainlink node has fulfillment permission within the `Oracle` contract. This can be done by calling function `setFulfillmentPermission({node_wallet}, true)`.
 - Confirm the address you provided for your node in the Market is the node's `ORACLE_CONTRACT_ADDRESS`, and not the `ACCOUNT_ADDRESS`.
 - When you deploy your `Oracle` contract, ensure the `_link` token address is correct:
