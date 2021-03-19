@@ -19,8 +19,9 @@ To list an OCR node without already having another node Market verified on the s
 
 - If you haven't already, you will need to deploy an Oracle Contract, following the steps in the [official docs](https://docs.chain.link/docs/fulfilling-requests)
 - When setting the `setFulfillmentPermission`, ensure you use your the Wallet/Account address of your OCR node
-- Follow the steps to verify your OCR node in the Market as detailed [here](market_node_verification_over.md)
+- Follow the steps to verify your OCR node in the Market as detailed [here](market_node_verification_eth.md)
 - Once verified, click on "[Nodes](https://market.link/profile/nodes)" on the sidebar of your user profile
 - Select the node you just verified from the list
 - Select the "Settings" tab, and scroll down to the Wallet Addresses section
 - Add the Wallet/Account addresses for your OCR node
+ 

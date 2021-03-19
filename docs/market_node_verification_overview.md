@@ -18,3 +18,5 @@ The Market supports a number of blockchains/networks, and the verification steps
 - [Binance Smart Chain](market_node_verification_bsc.md) (Mainnet, Testnet)
 
 - [Matic](market_node_verification_matic.md) (Mainnet, Mumbai)
+
+- [xDai](market_node_verification_xdai.md) (Mainnet)
