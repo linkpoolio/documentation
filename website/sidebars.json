@@ -18,6 +18,7 @@
           "market_node_verification_eth",
           "market_node_verification_bsc",          
           "market_node_verification_matic",
+          "market_node_verification_xdai",
           "market_node_verification_ocr"
         ]
       },
