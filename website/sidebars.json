@@ -1,5 +1,17 @@
 {
   "docs": {
+    "NaaS": [
+      {
+        "type": "subcategory",
+        "label": "Adapters",
+        "ids": [
+          "naas_adapters_overview",
+          "naas_adapters_environment_variables",
+          "naas_adapters_open",
+          "naas_adapters_generic"
+        ]
+      }
+    ],
     "Market": [
       {
         "type": "subcategory",

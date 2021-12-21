@@ -64,9 +64,45 @@
         "title": "Metrics API Overview",
         "sidebar_label": "Overview"
       },
-      "market_node_verification": {
-        "title": "Node Verification",
-        "sidebar_label": "Node Verification"
+      "market_node_verification_bsc": {
+        "title": "Node Verification Binance Smart Chain",
+        "sidebar_label": "Binance Smart Chain"
+      },
+      "market_node_verification_eth": {
+        "title": "Node Verification Ethereum",
+        "sidebar_label": "Ethereum"
+      },
+      "market_node_verification_matic": {
+        "title": "Node Verification Matic",
+        "sidebar_label": "Matic"
+      },
+      "market_node_verification_ocr": {
+        "title": "Node Verification OCR",
+        "sidebar_label": "Off Chain Reporting"
+      },
+      "market_node_verification_overview": {
+        "title": "Node Verification Overview",
+        "sidebar_label": "Overview"
+      },
+      "market_node_verification_xdai": {
+        "title": "Node Verification xDai",
+        "sidebar_label": "xDai"
+      },
+      "naas_adapters_environment_variables": {
+        "title": "NaaS Adapter Environment Variables",
+        "sidebar_label": "Environment Variables"
+      },
+      "naas_adapters_generic": {
+        "title": "NaaS Generic Adapters",
+        "sidebar_label": "Generic Adapters"
+      },
+      "naas_adapters_open": {
+        "title": "NaaS Open Adapters",
+        "sidebar_label": "Open Adapters"
+      },
+      "naas_adapters_overview": {
+        "title": "NaaS Adapters Overview",
+        "sidebar_label": "Overview"
       },
       "node_rpc": {
         "title": "Chainlink Node Setup Guide (LP EaaS)",
@@ -95,6 +131,7 @@
       "Contact us": "Contact us"
     },
     "categories": {
+      "NaaS": "NaaS",
       "Market": "Market",
       "Chainlinks": "Chainlinks",
       "Guides": "Guides",
