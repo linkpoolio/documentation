@@ -6,9 +6,10 @@
         "label": "Adapters",
         "ids": [
           "naas_adapters_overview",
-          "naas_adapters_environment_variables",
-          "naas_adapters_open",
-          "naas_adapters_generic"
+          "naas_adapters_installation",
+          "naas_adapters_usage",
+          "naas_adapters_examples",
+          "naas_adapters_guide"
         ]
       }
     ],
