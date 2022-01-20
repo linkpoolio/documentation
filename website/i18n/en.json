@@ -5,36 +5,21 @@
     "previous": "Previous",
     "tagline": "Our example Chainlinks and Ethereum as a Service endpoints.",
     "docs": {
-      "alpha_vantage_ropsten": {
-        "title": "Alpha Vantage (Ropsten)",
-        "sidebar_label": "Alpha Vantage"
-      },
-      "api_aggregator_ropsten": {
-        "title": "API Aggregator (Ropsten)",
-        "sidebar_label": "API Aggregator"
-      },
-      "asset_price_ropsten": {
-        "title": "Asset Price (Ropsten)",
-        "sidebar_label": "Asset Price"
-      },
-      "bridges": {
-        "title": "bridges"
+      "general_chainlink_guide": {
+        "title": "Chainlink Guide",
+        "sidebar_label": "Chainlink Guide"
       },
       "overview": {
         "title": "Overview",
         "sidebar_label": "Overview"
       },
-      "generic_jobs_ropsten": {
-        "title": "Generic Jobs (Ropsten)",
-        "sidebar_label": "Generic Jobs"
+      "general_public_rpc_nodes": {
+        "title": "Public RPC Nodes",
+        "sidebar_label": "Nodes"
       },
-      "keybase_verification": {
-        "title": "Keybase Verification",
-        "sidebar_label": "Keybase Verification"
-      },
-      "mainnet_node": {
-        "title": "Mainnet Node",
-        "sidebar_label": "Node"
+      "general_public_rpc_overview": {
+        "title": "Public RPC Overview",
+        "sidebar_label": "Overview"
       },
       "market_adapter_listing_open_adapter": {
         "title": "Adding an Open Adapter",
@@ -51,6 +36,10 @@
       "market_api_keys": {
         "title": "Managing API Keys",
         "sidebar_label": "Managing API Keys"
+      },
+      "market_keybase_verification": {
+        "title": "Keybase Verification",
+        "sidebar_label": "Keybase Verification"
       },
       "market_metrics_api_connect_grafana": {
         "title": "Connect Grafana to Market Metrics API",
@@ -108,38 +97,19 @@
         "title": "NaaS Adapters Usage",
         "sidebar_label": "Usage"
       },
-      "node_rpc": {
-        "title": "Chainlink Node Setup Guide (LP EaaS)",
-        "sidebar_label": "Node Setup Guide (LP EaaS)"
-      },
-      "nodes": {
-        "title": "Chainlink Node Design",
-        "sidebar_label": "Chainlink Nodes"
-      },
-      "public_rpc": {
-        "title": "Public Ethereum RPCs",
-        "sidebar_label": "Public ETH RPCs"
-      },
-      "rapid_api_weather_ropsten": {
-        "title": "Rapid API (Weather) (Ropsten)",
-        "sidebar_label": "Rapid API (Weather)"
-      },
-      "wolframalpha_ropsten": {
-        "title": "WolframAlpha Short Answers (Distance Between) (Ropsten)",
-        "sidebar_label": "WolframAlpha Short Answers (Distance Between)"
+      "naas_chainlink_nodes_overview": {
+        "title": "NaaS Chainlink Nodes Overview",
+        "sidebar_label": "Overview"
       }
     },
     "links": {
-      "Chainlinks": "Chainlinks",
-      "Ethereum RPC": "Ethereum RPC",
+      "Overview": "Overview",
       "Contact us": "Contact us"
     },
     "categories": {
+      "LinkPool": "LinkPool",
       "NaaS": "NaaS",
-      "Market": "Market",
-      "Chainlinks": "Chainlinks",
-      "Guides": "Guides",
-      "Public Ethereum RPC": "Public Ethereum RPC"
+      "Market": "Market"
     }
   },
   "pages-strings": {

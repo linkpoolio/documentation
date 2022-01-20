@@ -1,5 +1,5 @@
 ---
-id: keybase_verification
+id: market_keybase_verification
 title: Keybase Verification
 sidebar_label: Keybase Verification
 ---
