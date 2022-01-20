@@ -40,8 +40,4 @@ on request parameters.
 - [PromQL Operators](https://prometheus.io/docs/prometheus/latest/querying/operators/)
 - [PromQL Functions](https://prometheus.io/docs/prometheus/latest/querying/functions/)
 - [Cortex Architecture](https://cortexmetrics.io/docs/architecture/)
-
-## Solution Diagram
-
-![Solution Diagram](/img/market-metrics-diagram.png)
-
+  
