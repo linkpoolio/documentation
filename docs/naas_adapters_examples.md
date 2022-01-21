@@ -45,7 +45,6 @@ API_KEY="1234567890"
 }
 ```
 
-
 ## II. Generic Adapters
 
 #### 1. API Key
@@ -174,7 +173,6 @@ GENERIC_AUTH_HEADERS={"client_id":"1234567890","client_secret":"1234567890"}
     "url": "custom"
   }
 }
-
 ```
 
 ##### Response
@@ -196,7 +194,6 @@ Performs a `GET` request on `https://api.local/v3/no-auth`.
 
 ```bash
 GENERIC_BASE_URL="http://api.local/v3/"
-GENERIC_AUTH_TYPE="no_auth"
 ```
 
 ##### Request
@@ -208,7 +205,6 @@ GENERIC_AUTH_TYPE="no_auth"
     "url": "no-auth"
   }
 }
-
 ```
 
 ##### Response
