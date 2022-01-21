@@ -20,16 +20,16 @@ A Full Node is the bridge from the Chainlink Node to the Blockchain. A Full Node
 
 #### b. [Consumer Contract](https://docs.chain.link/docs/make-a-http-get-request/#api-consumer)
 
-A Consumer Contract is deployed for each Job on a given Chainlink Node. A Consumer Contract is generally what is called from the blockchain (based on it's block address) to initiate a given Job which may interact with data on some third-party API off-chain. Once deployed, a Consumer Contract exists as a block on the blockchain.
+A Consumer Contract is deployed for a given Job or set of related Jobs on a given Chainlink Node. A Consumer Contract initiates a call to a specified Job on a given Chainlink Node which may interact with data on some third-party API off-chain. Once deployed, a Consumer Contract exists as a contract address on the blockchain.
 
 **Required deployment params:**
-  
-  - `OracleAddress`
-  - `JobId`
+
+- `OracleAddress`
+- `LinkTokenAddress`
 
 #### c. [Oracle Contract](https://docs.chain.link/docs/fulfilling-requests/#deploy-your-own-oracle-contract)
 
-An Oracle Contract is deployed for each Chainlink Node, and is always referenced by the Consumer Contract. The Oracle Contract is what receives the LINK payment associated with the Job request. Once deployed, an Oracle Contract exists as a block on the blockchain.
+An Oracle Contract is deployed for each Chainlink Node, and is always referenced by the Consumer Contract. The Oracle Contract is what receives the LINK payment associated with the Job request. Once deployed, an Oracle Contract exists as a contract address on the blockchain.
 
 **Required params:**
   
