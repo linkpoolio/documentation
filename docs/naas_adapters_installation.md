@@ -21,15 +21,11 @@ By default, External Adapters will present the following environment variables a
 
 | Name | Default Value |
 | :--: | :-----------: |
-|`EXPERIMENTAL_RATE_LIMIT_ENABLED`|`true`|
-|`CACHE_ENABLED`|`true`|
-|`CACHE_KEY_IGNORED_PROPS`|`'meta'`|
-|`EXPERIMENTAL_WARMUP_ENABLED`|`true`|
+|`RATE_LIMIT_ENABLED`|`true`|
 |`RATE_LIMIT_API_TIER`|`free`|
-|`CACHE_TYPE`|`'local'`|
-|`LOG_LEVEL`|`'debug'`|
-|`CACHE_KEY_GROUP`|`$imageName`|
+|`CACHE_ENABLED`|`true`|
 |`CACHE_MIN_AGE`|`60000`|
+|`WARMUP_ENABLED`|`true`|
 
 ## II. Generic Adapter - Environment Variables
 
