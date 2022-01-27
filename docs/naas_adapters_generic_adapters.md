@@ -1,7 +1,7 @@
 ---
-id: naas_adapters_usage
-title: NaaS Adapters Usage
-sidebar_label: Usage
+id: naas_adapters_generic_adapters
+title: NaaS Adapters Generic Adapters
+sidebar_label: Generic Adapters
 ---
 
 Generic Adapters allow access to both unauthenticated and authenticated APIs. Please see [Generic Adapter Environment Variables](/docs/naas_adapters_installation#ii-generic-adapter-environment-variables) for more information about installation of a Generic Adapter.

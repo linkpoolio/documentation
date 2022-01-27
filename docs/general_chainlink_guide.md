@@ -4,7 +4,7 @@ title: Chainlink Guide
 sidebar_label: Chainlink Guide
 ---
 
-Getting off-chain data from on-chain requires the orchestration of many Chainlink components. The following chart (and description to follow) enumerates how to use Chainlink to manage off-chain data from on-chain.
+Getting off-chain data from on-chain requires the orchestration of many Chainlink components, performing different tasks, depending on the product and solution. The following chart (and description to follow) enumerates Chainlink's 'direct request' model, which is great starting point for new developers working with Chainlink.
 
 ## Guide to interacting with off-chain data with Chainlink
 
@@ -16,7 +16,7 @@ Getting off-chain data from on-chain requires the orchestration of many Chainlin
 
 #### a. [Full Node](https://docs.chain.link/docs/run-an-ethereum-client/#geth)
 
-A Full Node is the bridge from the Chainlink Node to the Blockchain. A Full Node enables the detection of requests for consumer contracts that are passed to the Chainlink Node.
+A Full Node is the bridge from the Chainlink Node to the Blockchain. A Full Node enables the Chainlink node to detect inbound on-chain requests from consumer contracts and submit transactions back to the blockchain.
 
 #### b. [Consumer Contract](https://docs.chain.link/docs/make-a-http-get-request/#api-consumer)
 

@@ -31,7 +31,7 @@ NaaS is currently available to the following testnets. In the Spring of 2022, Li
 
 ## III. Expiration
 
-Nodes have an expiration period of 30 days. Nodes may be renewed with 2 days of expiration. Nodes that are not renewed will be automatically be destroyed upon expiration.
+Testnet nodes have an expiration period of 30 days. Nodes may be renewed with 2 days of expiration. Nodes that are not renewed will be automatically be destroyed upon expiration.
 
 ## IV. Limitations
 

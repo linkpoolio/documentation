@@ -81,6 +81,10 @@
         "title": "NaaS Adapters Examples",
         "sidebar_label": "Examples"
       },
+      "naas_adapters_generic_adapters": {
+        "title": "NaaS Adapters Generic Adapters",
+        "sidebar_label": "Generic Adapters"
+      },
       "naas_adapters_guide": {
         "title": "NaaS Adapters Guide",
         "sidebar_label": "Guide"
@@ -92,10 +96,6 @@
       "naas_adapters_overview": {
         "title": "NaaS Adapters Overview",
         "sidebar_label": "Overview"
-      },
-      "naas_adapters_usage": {
-        "title": "NaaS Adapters Usage",
-        "sidebar_label": "Usage"
       },
       "naas_chainlink_nodes_overview": {
         "title": "NaaS Chainlink Nodes Overview",

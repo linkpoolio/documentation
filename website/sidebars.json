@@ -23,10 +23,7 @@
         "type": "subcategory",
         "label": "Chainlink Nodes",
         "ids": [
-          "naas_chainlink_nodes_overview",
-          "naas_chainlink_nodes_installation",
-          "naas_chainlink_nodes_usage",
-          "naas_chainlink_nodes_examples"
+          "naas_chainlink_nodes_overview"
         ]
       },
       {
@@ -35,7 +32,7 @@
         "ids": [
           "naas_adapters_overview",
           "naas_adapters_installation",
-          "naas_adapters_usage",
+          "naas_adapters_generic_adapters",
           "naas_adapters_examples"
         ]
       }
