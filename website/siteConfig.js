@@ -15,9 +15,8 @@ const siteConfig = {
   cname: 'docs.linkpool.io',
 
   headerLinks: [
-    {doc: 'overview', label: 'Chainlinks'},
-    {doc: 'public_rpc', label: 'Ethereum RPC'},
-    {href: 'mailto:contact@linkpool.io', label: 'Contact us'},
+    {doc: 'overview', label: 'Overview'},
+    {href: 'mailto:contact@linkpool.io', label: 'Contact us'}
   ],
 
   headerIcon: 'img/logo.svg',

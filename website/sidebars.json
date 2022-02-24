@@ -1,5 +1,42 @@
 {
   "docs": {
+    "LinkPool": [
+      {
+        "type": "subcategory",
+        "label": "General",
+        "ids": [
+          "overview",
+          "general_chainlink_guide"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Public RPCs",
+        "ids": [
+          "general_public_rpc_overview",
+          "general_public_rpc_nodes"
+        ]
+      }
+    ],
+    "NaaS": [
+      {
+        "type": "subcategory",
+        "label": "Chainlink Nodes",
+        "ids": [
+          "naas_chainlink_nodes_overview"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Adapters",
+        "ids": [
+          "naas_adapters_overview",
+          "naas_adapters_installation",
+          "naas_adapters_generic_adapters",
+          "naas_adapters_examples"
+        ]
+      }
+    ],
     "Market": [
       {
         "type": "subcategory",
@@ -12,18 +49,6 @@
       },
       {
         "type": "subcategory",
-        "label": "Node Verification",
-        "ids": [
-          "market_node_verification_overview",
-          "market_node_verification_eth",
-          "market_node_verification_bsc",          
-          "market_node_verification_matic",
-          "market_node_verification_xdai",
-          "market_node_verification_ocr"
-        ]
-      },
-      {
-        "type": "subcategory",
         "label": "Adding Adapters",
         "ids": [
           "market_adapter_listing_overview",
@@ -31,36 +56,8 @@
           "market_adapter_listing_open_adapter"
         ]
       },
-      "keybase_verification",
+      "market_keybase_verification",
       "market_api_keys"
-    ],
-    "Chainlinks": [
-      "overview",
-      {
-        "type": "subcategory",
-        "label": "Mainnet",
-        "ids": [
-          "mainnet_node"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Ropsten",
-        "ids": [
-          "generic_jobs_ropsten",
-          "asset_price_ropsten",
-          "alpha_vantage_ropsten",
-          "api_aggregator_ropsten",
-          "wolframalpha_ropsten",
-          "rapid_api_weather_ropsten"
-        ]
-      }
-    ],
-    "Guides": [
-      "node_rpc"
-    ],
-    "Public Ethereum RPC": [
-      "public_rpc"
     ]
   }
 }
