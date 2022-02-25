@@ -40,4 +40,4 @@ jobs:
           destination-github-username: 'linkpoolio'
           destination-repository-name: 'linkpoolio.github.io'
           user-email: ${{ secrets.GH_EMAIL }}
-          target-branch: develop # test develop branch first
+          target-branch: master
