@@ -1,0 +1,43 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build and Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the Repo
+        uses: actions/checkout@v2
+
+      - name: Use Node.js '14'
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install Yarn dependencies
+        run: yarn install --frozen-lockfile
+        working-directory: website
+
+      - name: Run build
+        run: yarn build
+        working-directory: website
+
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
+        with:
+          source-directory: 'website/build/linkpoolio.github.io'
+          destination-github-username: 'linkpoolio'
+          destination-repository-name: 'linkpoolio.github.io'
+          user-email: ${{ secrets.GH_EMAIL }}
+          target-branch: develop # test develop branch first
