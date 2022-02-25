@@ -7,6 +7,6 @@ Contributions are welcome. Please raise a PR with your changes.
 
 ## Deployment
 Once any changes are merged into master, they're automatically deployed
-to GitHub pages by Travis CI.
+to GitHub pages by Github Actions.
 
 [Static Pages Repository](https://github.com/linkpoolio/linkpoolio.github.io)
