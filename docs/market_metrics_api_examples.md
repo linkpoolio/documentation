@@ -118,94 +118,183 @@ ORDER BY value DESC;
 ### Daily Gas Costs in USD
 
 ```SQL
-SELECT time,
-       network_id,
-       network_group,
-       node_name,
-       coalesce(sum(gas_costs), 0) as "value"
-FROM (SELECT events.interval                                       as time,
-             node_name,
-             network_group,
-             sum(events.total_eth) * last(gas_pair.answer, answer) as gas_costs,
-             network_id
-      FROM (
-               (SELECT interval,
-                       node_id,
-                       node_name,
-                       network_group,
-                       network_id,
-                       ether_spent_sum as total_eth
-                FROM node_aggregates_by_1d
-                WHERE node_name = 'LinkPool'
-                  AND "interval" >= now() - interval '30 days'
-                  AND network_name = 'Mainnet'
-                ORDER BY interval) events LEFT JOIN (SELECT id, gas_token
-                                                     FROM networks) as gas_token ON events.network_id = gas_token.id LEFT JOIN (SELECT interval,
-                                                                                                                                       feed_name,
-                                                                                                                                       last(answer, interval) as answer
-                                                                                                                                FROM feed_answers_by_1d
-                                                                                                                                WHERE "interval" >= now() - interval '30 days'
-                                                                                                                                  AND feed_name IN
-                                                                                                                                      (SELECT DISTINCT (gas_token || ' / USD') as gas_token FROM networks)
-                                                                                                                                GROUP BY interval, feed_name
-                                                                                                                                ORDER BY interval) gas_pair
-               ON events.interval = gas_pair.interval AND gas_token.gas_token || ' / USD' = gas_pair.feed_name
-               )
-      GROUP BY events.interval, network_id, node_id, node_name, network_group) as gas_sums
-GROUP BY time, network_id, network_group, node_name;
+SELECT
+   time,
+   network_id,
+   network_group,
+   node_name,
+   coalesce(sum(gas_costs), 0) as "value" 
+FROM
+   (
+      SELECT
+         events.interval as time,
+         node_name,
+         network_group,
+         sum(events.total_eth) * last(gas_pair.answer, answer) as gas_costs,
+         network_id 
+      FROM
+         (
+(
+            SELECT
+               interval, node_id, node_name, network_group, network_id, ether_spent_sum as total_eth 
+            FROM
+               node_aggregates_by_1d 
+            WHERE
+               node_name = 'LinkPool' 
+               AND "interval" >= now() - interval '30 days' 
+               AND network_name = 'Mainnet' 
+            ORDER BY
+               interval) events 
+               LEFT JOIN
+                  (
+                     SELECT
+                        id,
+                        gas_token 
+                     FROM
+                        networks
+                  )
+                  as gas_token 
+                  ON events.network_id = gas_token.id 
+               LEFT JOIN
+                  (
+                     SELECT
+                        interval,
+                        feed_name,
+                        last(answer, interval) as answer 
+                     FROM
+                        feed_answers_by_1d 
+                     WHERE
+                        "interval" >= now() - interval '30 days' 
+                        AND feed_name IN 
+                        (
+                           SELECT DISTINCT
+(gas_token || ' / USD') as gas_token 
+                           FROM
+                              networks
+                        )
+                     GROUP BY
+                        interval,
+                        feed_name 
+                     ORDER BY
+                        interval
+                  )
+                  gas_pair 
+                  ON events.interval = gas_pair.interval 
+                  AND gas_token.gas_token || ' / USD' = gas_pair.feed_name 
+         )
+      GROUP BY
+         events.interval,
+         network_id,
+         node_id,
+         node_name,
+         network_group
+   )
+   as gas_sums 
+GROUP BY
+   time,
+   network_id,
+   network_group,
+   node_name;
 ```
 
 ### Daily Profit in USD
 
 ```SQL
-SELECT time,
-       network_id,
-       network_group,
-       node_name,
-       coalesce(sum(link_rewards) - sum(gas_costs), 0) as "value"
-FROM (SELECT events.interval                                             as time,
-             network_id,
-             network_group,
-             node_name,
-             sum(events.total_eth) * last(gas_pair.answer, answer)       as gas_costs,
-             sum(events.total_link) * last(link_usd.link_answer, answer) as link_rewards
-      FROM (
-               (SELECT interval,
-                       node_id,
-                       network_id,
-                       network_group,
-                       node_name,
-                       ether_spent_sum as total_eth,
-                       link_reward_sum as total_link
-                FROM node_aggregates_by_1d
-                WHERE node_name = 'LinkPool'
-                  AND "interval" >= now() - interval '30 days'
-                  AND network_name = 'Mainnet'
-                ORDER BY interval) events LEFT JOIN (SELECT id, gas_token
-                                                     FROM networks) as gas_token ON events.network_id = gas_token.id LEFT JOIN (SELECT interval, feed_name, last(answer, interval) as answer
-                                                                                                                                FROM feed_answers_by_1d
-                                                                                                                                WHERE "interval" >= now() - interval '30 days'
-                                                                                                                                  AND feed_name IN
-                                                                                                                                      (SELECT DISTINCT (gas_token || ' / USD') as gas_token FROM networks)
-                                                                                                                                GROUP BY interval, feed_name
-                                                                                                                                ORDER BY interval) gas_pair ON
-                           events.interval = gas_pair.interval AND
-                           gas_token.gas_token || ' / USD' = gas_pair.feed_name LEFT JOIN
-                   (SELECT interval, last(answer, interval) as link_answer
-                    FROM feed_answers_by_1d
-                    WHERE feed_name = 'LINK / USD'
-                      AND network_name = 'Mainnet'
-                      AND "interval" >= now() - interval '30 days'
-                    GROUP BY "interval"
-                    ORDER BY "interval") link_usd ON events.interval = link_usd.interval
-               )
-      GROUP BY events.interval,
-               network_id,
-               node_id,
-               network_id,
-               network_group,
-               node_name) as gas_sums
-GROUP BY time, network_id,
+SELECT
+   time,
+   network_id,
+   network_group,
+   node_name,
+   coalesce(sum(link_rewards) - sum(gas_costs), 0) as "value" 
+FROM
+   (
+      SELECT
+         events.interval as time,
+         network_id,
          network_group,
-         node_name;
+         node_name,
+         sum(events.total_eth) * last(gas_pair.answer, answer) as gas_costs,
+         sum(events.total_link) * last(link_usd.link_answer, answer) as link_rewards 
+      FROM
+         (
+(
+            SELECT
+               interval, node_id, network_id, network_group, node_name, ether_spent_sum as total_eth, link_reward_sum as total_link 
+            FROM
+               node_aggregates_by_1d 
+            WHERE
+               node_name = 'LinkPool' 
+               AND "interval" >= now() - interval '30 days' 
+               AND network_name = 'Mainnet' 
+            ORDER BY
+               interval) events 
+               LEFT JOIN
+                  (
+                     SELECT
+                        id,
+                        gas_token 
+                     FROM
+                        networks
+                  )
+                  as gas_token 
+                  ON events.network_id = gas_token.id 
+               LEFT JOIN
+                  (
+                     SELECT
+                        interval,
+                        feed_name,
+                        last(answer, interval) as answer 
+                     FROM
+                        feed_answers_by_1d 
+                     WHERE
+                        "interval" >= now() - interval '30 days' 
+                        AND feed_name IN 
+                        (
+                           SELECT DISTINCT
+(gas_token || ' / USD') as gas_token 
+                           FROM
+                              networks
+                        )
+                     GROUP BY
+                        interval,
+                        feed_name 
+                     ORDER BY
+                        interval
+                  )
+                  gas_pair 
+                  ON events.interval = gas_pair.interval 
+                  AND gas_token.gas_token || ' / USD' = gas_pair.feed_name 
+               LEFT JOIN
+                  (
+                     SELECT
+                        interval,
+                        last(answer, interval) as link_answer 
+                     FROM
+                        feed_answers_by_1d 
+                     WHERE
+                        feed_name = 'LINK / USD' 
+                        AND network_name = 'Mainnet' 
+                        AND "interval" >= now() - interval '30 days' 
+                     GROUP BY
+                        "interval" 
+                     ORDER BY
+                        "interval"
+                  )
+                  link_usd 
+                  ON events.interval = link_usd.interval 
+         )
+      GROUP BY
+         events.interval,
+         network_id,
+         node_id,
+         network_id,
+         network_group,
+         node_name
+   )
+   as gas_sums 
+GROUP BY
+   time,
+   network_id,
+   network_group,
+   node_name;
 ```
