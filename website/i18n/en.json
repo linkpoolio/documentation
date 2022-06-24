@@ -41,17 +41,17 @@
         "title": "Keybase Verification",
         "sidebar_label": "Keybase Verification"
       },
-      "market_metrics_api_connect_grafana": {
-        "title": "Connect Grafana to Market Metrics API",
-        "sidebar_label": "Connect your Grafana"
-      },
-      "market_metrics_api_example_queries": {
-        "title": "Metrics API Example Queries",
-        "sidebar_label": "Example Queries"
+      "market_metrics_api_examples": {
+        "title": "Metrics Query Examples",
+        "sidebar_label": "Query Examples"
       },
       "market_metrics_api_overview": {
         "title": "Metrics API Overview",
         "sidebar_label": "Overview"
+      },
+      "market_metrics_api_tables": {
+        "title": "Metrics Available Tables",
+        "sidebar_label": "Available Tables"
       },
       "market_node_verification_bsc": {
         "title": "Node Verification Binance Smart Chain",

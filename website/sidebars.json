@@ -43,8 +43,8 @@
         "label": "Metrics API",
         "ids": [
           "market_metrics_api_overview",
-          "market_metrics_api_example_queries",
-          "market_metrics_api_connect_grafana"
+          "market_metrics_api_tables",
+          "market_metrics_api_examples"
         ]
       },
       {
