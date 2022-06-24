@@ -168,7 +168,7 @@ FROM
                         AND feed_name IN 
                         (
                            SELECT DISTINCT
-(gas_token || ' / USD') as gas_token 
+                              (gas_token || ' / USD') as gas_token 
                            FROM
                               networks
                         )
@@ -251,7 +251,7 @@ FROM
                         AND feed_name IN 
                         (
                            SELECT DISTINCT
-(gas_token || ' / USD') as gas_token 
+                              (gas_token || ' / USD') as gas_token 
                            FROM
                               networks
                         )
