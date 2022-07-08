@@ -11,7 +11,7 @@ the DB was being queried directly.
 
 ## Example Usage
 
-URL: POST https://market.link/v1/metrics/
+URL: POST https://api.market.link/v1/metrics/
 
 Body:
 ```sql
