@@ -15,7 +15,7 @@ In addition, you may specify environment variables specific to the external adap
 
 ## I. Defaults
 
-_Note: Defaults are applicable for both open and generic adapters_
+_Note: Defaults are applicable for both open and Generic Adapters_
 
 By default, External Adapters will present the following environment variables and values. You may add, edit or remove environment variables according to your External Adapter needs:
 
@@ -35,7 +35,7 @@ Environment Variables are the method in which Generic Adapters are configured an
 | :-------: | :-----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------: | :---------: |
 |           |  `GENERIC_PREFIX`   |   By default, environment variables are prefixed with `GENERIC_`. Setting `GENERIC_PREFIX` overrides the default prefix. For example, `GENERIC_PREFIX = 'CUSTOM'` will set the default prefix to `CUSTOM_GENERIC_`   |                                                                       |             |
 |    ✅     | `GENERIC_BASE_URL`  |                                                                                Base URL of the api (i.e., `https://api.example.com`)                                                                                 |                                                                       |             |
-|           | `GENERIC_AUTH_TYPE` | The authorization type of the API. Additional environment variables may involved/required depending on its value See [Environment Variables Per Authorization Type](#b-environment-variables-per-authorization-type) | See [Supported Authorization Types](#a-supported-authorization-types) |  `no_auth`  |
+|           | `GENERIC_AUTH_TYPE` | The authorization type of the API. Additional environment variables may be involved/required depending on its value See [Environment Variables Per Authorization Type](#b-environment-variables-per-authorization-type) | See [Supported Authorization Types](#a-supported-authorization-types) |  `no_auth`  |
 
 ### A. Supported Authorization Types
 
