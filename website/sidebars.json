@@ -46,18 +46,7 @@
           "market_metrics_api_tables",
           "market_metrics_api_examples"
         ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Adding Adapters",
-        "ids": [
-          "market_adapter_listing_overview",
-          "market_adapter_listing_owner",
-          "market_adapter_listing_open_adapter"
-        ]
-      },
-      "market_keybase_verification",
-      "market_api_keys"
+      }
     ]
   }
 }
