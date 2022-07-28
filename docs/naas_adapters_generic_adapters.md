@@ -20,7 +20,7 @@ Upon installation, the Generic Adapter acts as a middleware API for consumption 
 
 ## Generic Request Endpoint
 
-This endpoint provisions access to the `GENERIC_BASE_URL` specified as environment variable upon installation. User may specify a `url` which is appended to the base url for requests. In this fashion, one generic adapter may be leveraged for multiple different endpoints to a given API base url.
+This endpoint provisions access to the `GENERIC_BASE_URL` specified as environment variable upon installation. User may specify a `url` which is appended to the base URL for requests. In this fashion, one Generic Adapter may be leveraged for multiple different endpoints to a given API base URL.
 
 ### Input Params
 
