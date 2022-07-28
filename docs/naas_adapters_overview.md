@@ -4,7 +4,7 @@ title: NaaS Adapters Overview
 sidebar_label: Overview
 ---
 
-Node as a Service (NaaS) offers the ability to deploy a private, secure Chainlink External Adapter. External adapters are how Chainlink enables easy integration of custom computations and specialized APIs (to learn more about Chainlink Adapters, [visit their documentation](https://docs.chain.link/docs/external-adapters/).
+Node as a Service (NaaS) offers the ability to deploy a private, secure Chainlink External Adapter. External adapters are how Chainlink enables easy integration of custom computations and specialized APIs (to learn more about Chainlink Adapters, [visit their documentation](https://docs.chain.link/docs/external-adapters/)).
 
 ## I. Types of Adapters
 
