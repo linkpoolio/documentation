@@ -16,7 +16,7 @@ Getting off-chain data from on-chain requires the orchestration of many Chainlin
 
 #### a. [Full Node](https://docs.chain.link/docs/run-an-ethereum-client/#geth)
 
-A Full Node is the bridge from the Chainlink Node to the Blockchain. A Full Node enables the Chainlink node to detect inbound on-chain requests from consumer contracts and submit transactions back to the blockchain.
+A Full Node is the bridge from the Chainlink Node to the Blockchain. A Full Node enables the Chainlink Node to detect inbound on-chain requests from consumer contracts and submit transactions back to the blockchain.
 
 #### b. [Consumer Contract](https://docs.chain.link/docs/make-a-http-get-request/#api-consumer)
 
